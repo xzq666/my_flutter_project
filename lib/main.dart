@@ -5,6 +5,7 @@ import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
+import 'demo/sliver_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+//      home: Home(),
       home: Home(),
       theme: ThemeData(
         primaryColor: Colors.blue,
@@ -29,7 +31,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return DefaultTabController(
-      length: 4,
+      length: 5,
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
@@ -57,6 +59,7 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.directions_boat)),
                 Tab(icon: Icon(Icons.directions_bike)),
                 Tab(icon: Icon(Icons.directions_car)),
+                Tab(icon: Icon(Icons.directions_railway)),
               ],
           ),
         ),
@@ -66,6 +69,7 @@ class Home extends StatelessWidget {
               BasicDemo(),
               LayoutDemo(),
               ViewDemo(),
+              SliverDemo(),
             ],
         ),
         // endDrawer右边抽屉
