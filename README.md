@@ -10,4 +10,5 @@ bittom_navigation_bar_demo - 底部导航视图<br/>
 basic_demo - Text、RichText、Container<br/>
 layout_demo.dart - 布局相关<br/>
 view_demo.dart - PageView、GridView<br/>
-sliver_demo - Sliver相关控件
+sliver_demo - Sliver相关控件<br/>
+navigator_demo.dart、post_show.dart - 路由相关
