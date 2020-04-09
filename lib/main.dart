@@ -8,6 +8,11 @@ import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/form_demo.dart';
+import 'demo/simple_dialog_demo.dart';
+import 'demo/alert_dialog_demo.dart';
+import 'demo/bottom_sheet_demo.dart';
+import 'demo/snack_bar_demo.dart';
+import 'demo/expansion_panel_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,11 +24,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 //      home: Home(),
 //      home: NavigatorDemo(),
-      initialRoute: '/form',
+      initialRoute: '/',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => Page(title: "About",),
         '/form': (context) => FormDemo(),
+        '/simpleDialog': (context) => SimpleDialogDemo(),
+        '/alertDialog': (context) => AlertDialogDemo(),
+        '/bottomSheet': (context) => BottomSheetDemo(),
+        '/snackBar': (context) => SnackBarDemo(),
+        '/expansionPanel': (context) => ExpansionPanelDemo(),
       },
       theme: ThemeData(
         primaryColor: Colors.blue,
@@ -54,7 +64,9 @@ class Home extends StatelessWidget {
             IconButton(
                 icon: Icon(Icons.search),
                 tooltip: "Search",
-                onPressed: () => debugPrint("Search is pressed")
+                onPressed: () {
+                  Navigator.pushNamed(context, "/expansionPanel");
+                }
             )
           ],
           elevation: 10.0,   // 阴影
