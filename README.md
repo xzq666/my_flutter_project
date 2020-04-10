@@ -17,4 +17,5 @@ alert_dialog_demo.dart - AlertDialog<br/>
 simple_dialog_demo.dart - SimpleDialog<br/>
 snack_bar_demo.dart - SnackBar<br/>
 bottom_sheet_demo.dart - BottomSheet、ModalBottomSheet<br/>
-expansion_panel_demo.dart - ExpansionPanel
+expansion_panel_demo.dart - ExpansionPanel<br/>
+chip_demo - Chip、ActionChip、FilterChip、ChoiceChip
