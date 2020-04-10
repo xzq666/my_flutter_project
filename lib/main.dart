@@ -13,6 +13,7 @@ import 'demo/alert_dialog_demo.dart';
 import 'demo/bottom_sheet_demo.dart';
 import 'demo/snack_bar_demo.dart';
 import 'demo/expansion_panel_demo.dart';
+import 'demo/chip_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/bottomSheet': (context) => BottomSheetDemo(),
         '/snackBar': (context) => SnackBarDemo(),
         '/expansionPanel': (context) => ExpansionPanelDemo(),
+        '/chip': (context) => ChipDemo(),
       },
       theme: ThemeData(
         primaryColor: Colors.blue,
@@ -65,7 +67,7 @@ class Home extends StatelessWidget {
                 icon: Icon(Icons.search),
                 tooltip: "Search",
                 onPressed: () {
-                  Navigator.pushNamed(context, "/expansionPanel");
+                  Navigator.pushNamed(context, "/chip");
                 }
             )
           ],
