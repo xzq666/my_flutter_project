@@ -14,6 +14,10 @@ import 'demo/bottom_sheet_demo.dart';
 import 'demo/snack_bar_demo.dart';
 import 'demo/expansion_panel_demo.dart';
 import 'demo/chip_demo.dart';
+import 'demo/data_table_demo.dart';
+import 'demo/paginated_data_table_demo.dart';
+import 'demo/card_demo.dart';
+import 'demo/stepper_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -36,6 +40,10 @@ class MyApp extends StatelessWidget {
         '/snackBar': (context) => SnackBarDemo(),
         '/expansionPanel': (context) => ExpansionPanelDemo(),
         '/chip': (context) => ChipDemo(),
+        '/dataTable': (context) => DataTableDemo(),
+        '/paginatedDataTable': (context) => PaginatedDataTableDemo(),
+        '/card': (context) => CardDemo(),
+        '/stepper': (context) => StepperDemo(),
       },
       theme: ThemeData(
         primaryColor: Colors.blue,
@@ -67,7 +75,7 @@ class Home extends StatelessWidget {
                 icon: Icon(Icons.search),
                 tooltip: "Search",
                 onPressed: () {
-                  Navigator.pushNamed(context, "/chip");
+                  Navigator.pushNamed(context, "/stepper");
                 }
             )
           ],
