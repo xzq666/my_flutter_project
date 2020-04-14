@@ -18,6 +18,7 @@ import 'demo/data_table_demo.dart';
 import 'demo/paginated_data_table_demo.dart';
 import 'demo/card_demo.dart';
 import 'demo/stepper_demo.dart';
+import 'demo/state/state_management_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/paginatedDataTable': (context) => PaginatedDataTableDemo(),
         '/card': (context) => CardDemo(),
         '/stepper': (context) => StepperDemo(),
+        '/stateManagement': (context) => StateManagementDemo(),
       },
       theme: ThemeData(
         primaryColor: Colors.blue,
@@ -75,7 +77,7 @@ class Home extends StatelessWidget {
                 icon: Icon(Icons.search),
                 tooltip: "Search",
                 onPressed: () {
-                  Navigator.pushNamed(context, "/stepper");
+                  Navigator.pushNamed(context, "/stateManagement");
                 }
             )
           ],
